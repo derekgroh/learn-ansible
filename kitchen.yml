@@ -1,0 +1,31 @@
+---
+driver:
+  name: vagrant
+  
+provisioner:
+  name: ansible_playbook
+  hosts: all
+  require_ansible_repo: true
+  require_ansible_omnibus: false
+  ansible_verbose: true
+  ansible_version: latest
+  # ansible_verbosity: 1
+  # ansible_diff: true
+  roles_path: roles
+  playbook: playbook.yml
+  # extra_vars:
+  #   env: local
+  
+verifer:
+  name: inspec
+
+platforms:
+  - name: ubuntu-20.04
+  
+suites:
+  - name: default
+    verifer:
+      inspec_tests:
+        - test\integration\default
+    # provisioner:
+        # playbook: "<playbook>"

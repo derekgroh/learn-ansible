@@ -1,0 +1,5 @@
+[control]
+default-ubuntu-2004 ansible_host=10.0.2.15
+
+[windows]
+server1 ansible_host=10.0.2.16

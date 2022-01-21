@@ -1,0 +1,3 @@
+I, [2022-01-20T23:48:16.011967 #23040]  INFO -- Kitchen: -----> Starting Test Kitchen (v3.0.0)
+I, [2022-01-20T23:48:17.332810 #23040]  INFO -- Kitchen: -----> Destroying <default-ubuntu-2004>...
+I, [2022-01-20T23:48:23.486493 #23040]  INFO -- Kitchen: -----> Test Kitchen is finished. (0m7.47s)
